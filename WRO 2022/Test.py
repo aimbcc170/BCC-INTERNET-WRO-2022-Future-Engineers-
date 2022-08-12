@@ -24,6 +24,15 @@ class Block:
         self.learned= True if ID > 0 else False
         self.type="BLOCK"
         
+def compare(x1,y1,x2,y2):
+    area1 = x1*x2
+    area2 = x2*x2
+    if area1 > area2:
+        return block1
+    if area1 < area2:
+        return block2
+    return tie
+        
 while True:
     check = hl.count()
     if check == 0:
